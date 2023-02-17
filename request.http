@@ -1,0 +1,35 @@
+POST http://localhost:4002/products
+// Postar novo produto
+content-type: application/json
+
+{
+    "name": "Caneta branca",
+    "price": 4
+}
+
+###
+
+GET http://localhost:4002/products
+// Resgata todos os produtos
+
+###
+
+GET http://localhost:4002/products/id
+// Resgata 1 produto pelo ID
+
+
+###
+
+PUT http://localhost:4002/products/id
+// Alterar dados do produto pelo ID
+content-type: application/json
+
+{
+    "name": "Caneta preta",
+    "price": 12
+}
+
+###
+
+DELETE http://localhost:4002/products/id
+// Excluir produto pelo ID
